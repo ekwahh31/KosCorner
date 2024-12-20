@@ -95,8 +95,12 @@ include 'includes/auth_user.php';
         required
         aria-label="Fasilitas Umum"
         ></textarea>
-        <button onclick="window.location.href='includes/logout.php'" >Log Out</button>
-      <button type="submit">Tambah Kos</button>
+
+  <div class="button-group">
+    <button onclick="window.location.href='includes/logout.php'" type="button">Log Out</button>
+    <button type="submit">Tambah Kos</button>
+  </div>
+
     </form>
   </div>
 </body>

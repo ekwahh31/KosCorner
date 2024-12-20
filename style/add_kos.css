@@ -28,6 +28,32 @@ body {
     position: relative;
 }
 
+.button-group {
+    display: flex; /* Mengatur elemen dalam container ke satu baris */
+    gap: 10px; /* Menambahkan jarak antara tombol */
+    justify-content: center; /* Mengatur posisi tombol di tengah */
+    margin-top: 20px; /* Memberikan jarak atas ke elemen sebelumnya */
+}
+
+.button-group button {
+    flex: none; /* Membuat tombol tidak meluas */
+    padding: 10px 15px; /* Memberikan padding ke tombol */
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #C62E2E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #691818;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Heading Styles */
 h1 {
     text-align: center;
