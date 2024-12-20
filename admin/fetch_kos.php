@@ -1,8 +1,8 @@
 <?php
-include 'includes/db.php';
+include '../includes/db.php';
 
 // Query to fetch kos data
-$sql = "SELECT id, image_url, title, price FROM kos_recommendations";
+$sql = "SELECT id, image_url, title, price FROM kos_recommendations LIMIT 4";
 $result = $conn->query($sql);
 
 if ($result === false) {

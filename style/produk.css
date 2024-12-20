@@ -1,3 +1,7 @@
+*{
+    text-decoration: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,6 +17,19 @@ header {
     padding: 20px;
     background-color: #C62E2E;
     color: white;
+}
+
+.footer .philosophy {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .philosophy-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 header h1 {

@@ -18,6 +18,52 @@ body {
     text-align: center;
 }
 
+/* Gaya Umum untuk Footer */
+footer {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 2px solid #333;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+footer .philosophy-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Responsive Styling untuk Footer */
+@media (max-width: 600px) {
+    footer .philosophy-content {
+        flex-direction: column;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -30,7 +76,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 24px;
-    color:aliceblue
+    color:rgb(255, 255, 255);
 }
 
 nav {

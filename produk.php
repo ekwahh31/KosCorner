@@ -3,62 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rekomendasi Lainnya</title>
+    <title>KosCorner - Rekomendasi Kos</title>
     <link rel="stylesheet" href="style/produk.css">
 </head>
 <body>
     <header>
-            <h1>KOSCORNER</h1>
-            <nav>
-                <a href="index.php">Home</a>
-                <a href="#">Rekomendasi Kos</a>
-                <a href="about.html">Tentang Kami</a>
-                <a href="login.php" class="login-button">Tambahkan Kos</a>
-            </nav>
-        </header>
+        <h1>KOSCORNER</h1>
+        <nav>
+            <a href="index.php">Home</a>
+            <a href="produk.php">Rekomendasi Kos</a>
+            <a href="about.html">Tentang Kami</a>
+            <a href="add_kos.php" class="login-button">Tambahkan Kos</a>
+        </nav>
+    </header>
     <section class="recommendation-section">
         <h2 class="section-title">REKOMENDASI LAINNYA</h2>
-        <div class="recommendation-container">
-            <div class="recommendation-item">
-                <img src="../asset/image1.jpg" alt="Kost Gavin Tipe AC">
-                <h3>KOST GAVIN TIPE AC PURWOKERTO SELATAN</h3>
-                <p>Rp 1.000.000 / bulan</p>
-            </div>
-            <div class="recommendation-item">
-                <img src="../asset/image2.jpg" alt="Kost GN Medium">
-                <h3>KOST GN MEDIUM PURWOKERTO SELATAN</h3>
-                <p>Rp 1.600.000 / bulan</p>
-            </div>
-            <div class="recommendation-item">
-                <img src="../asset/image3.jpg" alt="Kost Raihan">
-                <h3>KOST RAIHAN PURWOKERTO UTARA BANYUMAS</h3>
-                <p>Rp 900.000 / bulan</p>
-            </div>
-            <div class="recommendation-item">
-                <img src="../asset/image4.jpg" alt="Kost Midtown">
-                <h3>KOST MIDTOWN TIPE SINGLE PURWOKERTO UTARA</h3>
-                <p>Rp 1.600.000 / bulan</p>
-            </div>
-            <div class="recommendation-item">
-                <img src="../asset/image5.jpg" alt="Kost Pintu Biruku">
-                <h3>KOST PINTU BIRUKU ST PURWOKERTO TIMUR</h3>
-                <p>Rp 1.400.000 / bulan</p>
-            </div>
-            <div class="recommendation-item">
-                <img src="../asset/image6.jpg" alt="Kost Griya Laras">
-                <h3>KOST GRIYA LARAS ATI TIPE VIP PURWOKERTO TIMUR</h3>
-                <p>Rp 1.000.000 / bulan</p>
-            </div>
+        <div class="recommendation-container" id="produkList">
+            <!-- Data kos akan dimuat di sini oleh JavaScript -->
         </div>
     </section>
-
     <footer>
-    <h2>Our Philosophy</h2>
+    <h2>KosCorner</h2>
         <div class="philosophy-content">
             <p>" Di KosCorner, kami percaya tempat tinggal nyaman mendukung kehidupan terbaik Anda. "</p>
         </div>
         <p>&copy; 2024 KosCorner. All rights reserved.</p>
     </footer>
-    
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const produkList = document.getElementById("produkList");
+
+            // Fungsi untuk menampilkan daftar kos
+            function displayProduk(kosArray) {
+                produkList.innerHTML = "";
+                if (kosArray.length === 0) {
+                    produkList.innerHTML = "<p>Tidak ada kos ditemukan.</p>";
+                    return;
+                }
+                kosArray.forEach(kos => {
+                    const produkItem = document.createElement("div");
+                    produkItem.classList.add("recommendation-item");
+                    produkItem.innerHTML = `
+                    <a href="detail.php?id=${kos.id}">
+                        <img src="${kos.image_url}" alt="${kos.title}">
+                        <h3>${kos.title}</h3>
+                        <p>${kos.price}</p>
+                    </a>
+                    `;
+                    produkList.appendChild(produkItem);
+                });
+            }
+
+            // Fungsi untuk mengambil data kos
+            function fetchProduk() {
+                produkList.innerHTML = "<p>Loading data kos...</p>";
+                fetch("admin/fetch_produk.php")
+                    .then(response => response.json())
+                    .then(data => displayProduk(data))
+                    .catch(error => {
+                        console.error("Error fetching produk:", error);
+                        produkList.innerHTML = "<p>Gagal memuat data kos. Silakan coba lagi.</p>";
+                    });
+            }
+
+            // Panggil data kos saat halaman dimuat
+            fetchProduk();
+        });
+    </script>
 </body>
 </html>
