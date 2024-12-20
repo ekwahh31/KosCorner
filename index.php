@@ -37,6 +37,7 @@ $hero = $result_hero->fetch_assoc();
         <div id="kosList" class="cards">
             <!-- Data kos akan dimuat di sini oleh JavaScript -->
         </div>
+        <button>Lainnya</button>
     </section>
     
     <div class="philosophy-container">
