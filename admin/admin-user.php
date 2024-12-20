@@ -19,7 +19,7 @@ include '../includes/auth_admin.php';
             <a href="../index.php">KosCorner</a>
         </div>
         <div class="header-right">
-            <a>Admin</a>
+            <a href="add_kos_admin.php">Tambah Kos</a>
         </div>
     </div>
 </nav>
