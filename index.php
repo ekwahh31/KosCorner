@@ -20,7 +20,7 @@ $hero = $result_hero->fetch_assoc();
         <nav>
             <a href="index.php">Home</a>
             <a href="#">Rekomendasi Kos</a>
-            <a href="#">Tentang Kami</a>
+            <a href="about.html">Tentang Kami</a>
         </nav>
     </header>
 
@@ -38,10 +38,32 @@ $hero = $result_hero->fetch_assoc();
             <!-- Data kos akan dimuat di sini oleh JavaScript -->
         </div>
     </section>
+    
+    <div class="philosophy-container">
+    <div class="philosophy-box">
+        <div class="philosophy-text">
+            <h2>Our Philosophy</h2>
+            <p>
+                Di <strong>KosCorner</strong>, kami percaya bahwa tempat tinggal bukan sekadar ruang untuk tidur, tetapi fondasi bagi seseorang untuk bermimpi, tumbuh, dan mencapai potensi terbaiknya. Kami memahami bahwa kenyamanan, lokasi yang strategis, dan lingkungan yang mendukung dapat membuat perbedaan besar dalam kehidupan sehari-hari.
+            </p>
+        </div>
+        <div class="philosophy-image">
+            <img src="path/to/your/image.png" alt="Kos Kosan Illustration">
+        </div>
+    </div>
+</div>
 
-    <footer>
+
+
+
+<footer>
+    <h2>Our Philosophy</h2>
+        <div class="philosophy-content">
+            <p>" Di KosCorner, kami percaya tempat tinggal nyaman mendukung kehidupan terbaik Anda. "</p>
+        </div>
         <p>&copy; 2024 KosCorner. All rights reserved.</p>
     </footer>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {

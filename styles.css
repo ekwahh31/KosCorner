@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: #C62E2E;
     padding: 10px 20px;
     text-align: center;
 }
@@ -17,7 +17,7 @@ header h1 {
 header nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
 }
 
 .hero {
@@ -106,23 +106,75 @@ header nav a {
     background-color: #e68900;
 }
 
-.philosophy {
+.footer .philosophy {
     background-color: #f9f9f9;
     padding: 20px;
     text-align: center;
 }
 
-.philosophy-content {
+.footer .philosophy-content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.philosophy-content img {
-    width: 100px;
-    height: auto;
+.philosophy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fefaf5;
 }
+
+.philosophy-box {
+    display: flex;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #f5e6d8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.philosophy-text {
+    flex: 1;
+}
+
+.philosophy-text h2 {
+    font-size: 20px;
+    color: #9c5b00;
+    margin-bottom: 15px;
+}
+
+.philosophy-text p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.philosophy-image {
+    flex: 0 0 200px;
+}
+
+.philosophy-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .philosophy-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .philosophy-image {
+        margin-bottom: 20px;
+    }
+}
+
+
 
 footer {
     background-color: #333;
