@@ -19,21 +19,55 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: #C62E2E;
-    padding: 10px 20px;
-    text-align: center;
+    color: white;
 }
 
 header h1 {
     margin: 0;
-    color: #fff;
+    font-size: 24px;
 }
 
-header nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ffffff;
+nav {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
 }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+nav .login-button {
+    background-color: white;
+    color: #C62E2E;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 20px;
+}
+
+nav .login-button:hover {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+}
+
 
 h1, h2 {
     color: #C62E2E;

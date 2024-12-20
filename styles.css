@@ -34,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #0056b3;
+    background-color: #771b1b;
 }
 
 nav .login-button {
@@ -49,9 +49,9 @@ nav .login-button {
 }
 
 nav .login-button:hover {
-    background-color: #0056b3;
+    background-color: #771e1e;
     color: white;
-    border-color: #0056b3;
+    border-color: #C62E2E;
 }
 
 
@@ -60,11 +60,11 @@ nav .login-button:hover {
     display: flex;
     justify-content: center; 
     align-items: center;     
-    height: 100vh;           
+    height: 70vh;           
 }
 
 .hero img {
-    max-width: 100%;         
+    max-width: 50%;         
     height: auto;            
 }
 
@@ -131,7 +131,7 @@ nav .login-button:hover {
 .recommendations button {
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #ff9800;
+    background-color: #C62E2E;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -139,7 +139,7 @@ nav .login-button:hover {
 }
 
 .recommendations button:hover {
-    background-color: #e68900;
+    background-color: #8b2323;
 }
 
 .footer .philosophy {
