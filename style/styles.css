@@ -230,9 +230,10 @@ nav .login-button:hover {
 }
 
 .follow-us p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
     color: #555;
+    font-weight: bold;
 }
 
 .photo-gallery {

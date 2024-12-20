@@ -27,12 +27,12 @@ if (!$kos) {
     <link rel="stylesheet" href="style/kos.css">
 </head>
 <body>
-<header>
+    <header>
         <h1>KOSCORNER</h1>
         <nav>
             <a href="index.php">Home</a>
-            <a href="#">Rekomendasi Kos</a>
-            <a href="#">Tentang Kami</a>
+            <a href="produk.php">Rekomendasi Kos</a>
+            <a href="about.html">Tentang Kami</a>
         </nav>
     </header>
 
@@ -78,7 +78,7 @@ if (!$kos) {
             <?php endforeach; ?>
         </ul>
 
-        <h3>Tinggalkan Balasan</h3>
+        <h3>Tinggalkan Ulasan</h3>
         <form action="submit_comment.php" method="post" class="comment-form">
             <textarea name="comment" rows="5" placeholder="Tulis komentar Anda di sini..." required></textarea>
             <input type="hidden" name="kos_id" value="<?php echo $kos['id']; ?>">
