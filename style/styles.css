@@ -5,30 +5,66 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: #C62E2E;
-    padding: 10px 20px;
-    text-align: center;
+    color: white;
 }
 
 header h1 {
     margin: 0;
+    font-size: 24px;
 }
 
-header nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ffffff;
+nav {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
 }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #771b1b;
+}
+
+nav .login-button {
+    background-color: white;
+    color: #C62E2E;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 20px;
+}
+
+nav .login-button:hover {
+    background-color: #771e1e;
+    color: white;
+    border-color: #C62E2E;
+}
+
+
 
 .hero {
     display: flex;
     justify-content: center; 
     align-items: center;     
-    height: 100vh;           
+    height: 70vh;           
 }
 
 .hero img {
-    max-width: 100%;         
+    max-width: 50%;         
     height: auto;            
 }
 
@@ -95,7 +131,7 @@ header nav a {
 .recommendations button {
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #ff9800;
+    background-color: #C62E2E;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -103,7 +139,7 @@ header nav a {
 }
 
 .recommendations button:hover {
-    background-color: #e68900;
+    background-color: #8b2323;
 }
 
 .footer .philosophy {
@@ -123,13 +159,13 @@ header nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 55vh;
     background-color: #fefaf5;
 }
 
 .philosophy-box {
     display: flex;
-    max-width: 800px;
+    max-width: 400px;
     background-color: #fff;
     border: 1px solid #f5e6d8;
     border-radius: 8px;
