@@ -41,7 +41,6 @@ $hero = $result_hero->fetch_assoc();
         <button>Lainnya</button>
     </section>
     
-    <footer>
     <div class="philosophy-container">
     <div class="philosophy-box">
         <div class="philosophy-text">
@@ -54,7 +53,6 @@ $hero = $result_hero->fetch_assoc();
             <img src="asset/Kos-kosan.jpg" alt="Kos Kosan Illustration">
         </div>
     </div>
-    </footer>
 </div>
 
 
