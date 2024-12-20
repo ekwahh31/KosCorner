@@ -19,7 +19,7 @@ $hero = $result_hero->fetch_assoc();
         <h1>KOSCORNER</h1>
         <nav>
             <a href="index.php">Home</a>
-            <a href="#">Rekomendasi Kos</a>
+            <a href="produk.php">Rekomendasi Kos</a>
             <a href="about.html">Tentang Kami</a>
             <a href="login.php" class="login-button">Tambahkan Kos</a>
         </nav>
@@ -41,6 +41,7 @@ $hero = $result_hero->fetch_assoc();
         <button>Lainnya</button>
     </section>
     
+    <footer>
     <div class="philosophy-container">
     <div class="philosophy-box">
         <div class="philosophy-text">
@@ -53,6 +54,7 @@ $hero = $result_hero->fetch_assoc();
             <img src="asset/Kos-kosan.jpg" alt="Kos Kosan Illustration">
         </div>
     </div>
+    </footer>
 </div>
 
 
