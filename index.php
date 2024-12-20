@@ -21,7 +21,7 @@ $hero = $result_hero->fetch_assoc();
             <a href="index.php">Home</a>
             <a href="produk.php">Rekomendasi Kos</a>
             <a href="about.html">Tentang Kami</a>
-            <a href="login.php" class="login-button">Tambahkan Kos</a>
+            <a href="add_kos.php" class="login-button">Tambahkan Kos</a>
         </nav>
     </header>
 
@@ -38,7 +38,7 @@ $hero = $result_hero->fetch_assoc();
         <div id="kosList" class="cards">
             <!-- Data kos akan dimuat di sini oleh JavaScript -->
         </div>
-        <button>Lainnya</button>
+        <button onclick="window.location.href='produk.php'" >Lainnya</button>
     </section>
     
     <div class="philosophy-container">
@@ -97,7 +97,7 @@ $hero = $result_hero->fetch_assoc();
             // Fungsi untuk mengambil data kos
             function fetchKos() {
                 kosList.innerHTML = "<p>Loading data kos...</p>";
-                fetch("fetch_kos.php")
+                fetch("admin/fetch_kos.php")
                     .then(response => response.json())
                     .then(data => displayKos(data))
                     .catch(error => {

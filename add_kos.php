@@ -1,3 +1,6 @@
+<?php
+include 'includes/auth_user.php';
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -8,81 +11,92 @@
 <body>
   <div class="container">
     <h1>Tambah Kos Baru</h1>
-    <form id="addKosForm">
+    <?php
+    if (isset($_SESSION['error'])) {
+        echo '<p style="color:red;">' . $_SESSION['error'] . '</p>';
+        unset($_SESSION['error']);
+    }
+    if (isset($_SESSION['success'])) {
+        echo '<p style="color:green;">' . $_SESSION['success'] . '</p>';
+        unset($_SESSION['success']);
+    }
+    ?>
+    <form id="addKosForm" action="admin/process_add_kos.php" method="POST">
       <input
         type="text"
-        id="KosTitle"
+        name="KosTitle"
         placeholder="Nama Kos"
         required
         aria-label="Nama Kos"
       >
       <input
         type="text"
-        id="KosPrice"
+        name="KosPrice"
         placeholder="Harga Kos / bulan"
         required
         aria-label="Harga Kos / bulan"
       >
       <input
         type="text"
-        id="LokasiKos"
+        name="KosLocation"
         placeholder="Lokasi Kos"
         required
         aria-label="Lokasi Kos"
       >
       <input
         type="text"
-        id="image_url"
-        placeholder="Url Foto Kos"
+        name="KosImage"
+        placeholder="URL Gambar Kos"
         required
-        aria-label="Url Foto Kos"
+        aria-label="URL Gambar Kos"
       >
       <input
         type="text"
-        id="additional_image1"
-        placeholder="Url Foto Tambahan"
+        name="additional_image1"
+        placeholder="URL Foto Tambahan 1"
         required
-        aria-label="Url Foto Tambahan"
+        aria-label="URL Foto Tambahan 1"
       >
       <input
         type="text"
-        id="additional_image2"
-        placeholder="Url Foto Tambahan"
+        name="additional_image2"
+        placeholder="URL Foto Tambahan 2"
         required
-        aria-label="Url Foto Tambahan"
+        aria-label="URL Foto Tambahan 2"
       >
       <input
         type="text"
-        id="additional_image3"
-        placeholder="Url Foto Tambahan"
+        name="additional_image3"
+        placeholder="URL Foto Tambahan 3"
         required
-        aria-label="Url Foto Tambahan"
+        aria-label="URL Foto Tambahan 3"
       >
       <textarea
-        id="room_spec"
+        name="room_spec"
         placeholder="Spesifikasi Kamar"
         required
         aria-label="Spesifikasi Kamar"
       ></textarea>
       <textarea
-        id="room_facilities"
+        name="room_facilities"
         placeholder="Fasilitas Kamar"
         required
         aria-label="Fasilitas Kamar"
       ></textarea>
       <textarea
-        id="bathroom_facilities"
+        name="bathroom_facilities"
         placeholder="Fasilitas Kamar Mandi"
         required
         aria-label="Fasilitas Kamar Mandi"
       ></textarea>
       <textarea
-        id="general_facilities"
+        name="general_facilities"
         placeholder="Fasilitas Umum"
         required
         aria-label="Fasilitas Umum"
-      ></textarea>
-      <button type="submit">Tambahkan Kos</button>
+        ></textarea>
+        <button onclick="window.location.href='includes/logout.php'" >Log Out</button>
+      <button type="submit">Tambah Kos</button>
     </form>
   </div>
 </body>
