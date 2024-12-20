@@ -77,18 +77,14 @@ if (!$kos) {
                 <li><?php echo trim($facility); ?></li>
             <?php endforeach; ?>
         </ul>
-
-        <h3>Tinggalkan Ulasan</h3>
-        <form action="submit_comment.php" method="post" class="comment-form">
-            <textarea name="comment" rows="5" placeholder="Tulis komentar Anda di sini..." required></textarea>
-            <input type="hidden" name="kos_id" value="<?php echo $kos['id']; ?>">
-            <button type="submit">Kirim Komentar</button>
-        </form>
-
-        <div class="comments">
-            <h4>Ulasan:</h4>
-            <p>Belum ada ulasan.</p>
-        </div>
     </div>
+    
+    <footer>
+        <h2>KosCorner</h2>
+        <div class="philosophy-content">
+            <p>" Di KosCorner, kami percaya tempat tinggal nyaman mendukung kehidupan terbaik Anda. "</p>
+        </div>
+        <p>&copy; 2024 KosCorner. All rights reserved.</p>
+    </footer>
 </body>
 </html>
