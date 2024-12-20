@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #C62E2E;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+}
+
+.hero img {
+    max-width: 100%;         
+    height: auto;            
+}
+
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.recommendations .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recommendations .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommendations .card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Tetapkan rasio aspek 16:9 */
+    object-fit: cover;    /* Pastikan gambar memenuhi area */
+    border-radius: 5px;
+    background-color: #f4f4f4; /* Tambahkan latar belakang untuk estetika */
+    display: block;
+}
+
+/* Untuk memastikan konsistensi ukuran gambar */
+.recommendations .card img {
+    display: block;
+    width: 100%;
+    height: auto; /* Ubah dari 0 ke auto */
+    padding-top: 0; /* Ubah dari 56.25% ke 0 */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.recommendations .card button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: rgb(0, 68, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recommendations .card button:hover{
+    background-color: rgb(0, 27, 182);
+}
+
+.recommendations button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recommendations button:hover {
+    background-color: #e68900;
+}
+
+.footer .philosophy {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .philosophy-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.philosophy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fefaf5;
+}
+
+.philosophy-box {
+    display: flex;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #f5e6d8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.philosophy-text {
+    flex: 1;
+}
+
+.philosophy-text h2 {
+    font-size: 20px;
+    color: #9c5b00;
+    margin-bottom: 15px;
+}
+
+.philosophy-text p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.philosophy-image {
+    flex: 0 0 200px;
+}
+
+.philosophy-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .philosophy-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .philosophy-image {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-gallery img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}

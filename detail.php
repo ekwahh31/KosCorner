@@ -24,7 +24,7 @@ if (!$kos) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KosCorner</title>
-    <link rel="stylesheet" href="kos.css">
+    <link rel="stylesheet" href="style/kos.css">
 </head>
 <body>
 <header>

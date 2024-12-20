@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/admin-user.css">
+    <link rel="stylesheet" href="../style/admin-user.css">
     <link href="https://fonts.cdnfonts.com/css/mantinia" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -13,7 +13,7 @@
 <nav class="header">
     <div class="header-container">
         <div class="header-left">
-            <a href="index.php">KosCorner</a>
+            <a href="../index.php">KosCorner</a>
         </div>
         <div class="header-right">
             <a>Admin</a>
