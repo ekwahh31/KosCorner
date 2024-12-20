@@ -16,7 +16,7 @@ $hero = $result_hero->fetch_assoc();
 </head>
 <body>
     <header>
-        <h1>KOSCORNER</h1>
+        <a href="index.php"><h1>KOSCORNER</h1></a>
         <nav>
             <a href="index.php">Home</a>
             <a href="produk.php">Rekomendasi Kos</a>
@@ -38,7 +38,7 @@ $hero = $result_hero->fetch_assoc();
         <div id="kosList" class="cards">
             <!-- Data kos akan dimuat di sini oleh JavaScript -->
         </div>
-        <button>Lainnya</button>
+        <a href="produk.php"><button>Lainnya</button></a>
     </section>
     
     <div class="philosophy-container">
@@ -49,17 +49,24 @@ $hero = $result_hero->fetch_assoc();
                 Di <strong>KosCorner</strong>, kami percaya bahwa tempat tinggal bukan sekadar ruang untuk tidur, tetapi fondasi bagi seseorang untuk bermimpi, tumbuh, dan mencapai potensi terbaiknya. Kami memahami bahwa kenyamanan, lokasi yang strategis, dan lingkungan yang mendukung dapat membuat perbedaan besar dalam kehidupan sehari-hari.
             </p>
         </div>
-        <div class="philosophy-image">
-            <img src="asset/Kos-kosan.jpg" alt="Kos Kosan Illustration">
-        </div>
     </div>
 </div>
 
-
+<div class="follow-us">
+        <h3>Ikuti Kami</h3>
+        <p>@KosCorner</p>
+        <div class="photo-gallery">
+            <img src="asset/7.jpg" alt="Foto Kos">
+            <img src="asset/8.jpg" alt="Foto Kos">
+            <img src="asset/9.jpg" alt="Foto Kos">
+            <img src="asset/10.jpg" alt="Foto Kos">
+            <img src="asset/11.jpg" alt="Foto Kos">
+        </div>
+    </div>
 
 
 <footer>
-    <h2>Our Philosophy</h2>
+    <h2>KosCorner</h2>
         <div class="philosophy-content">
             <p>" Di KosCorner, kami percaya tempat tinggal nyaman mendukung kehidupan terbaik Anda. "</p>
         </div>
